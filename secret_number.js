@@ -1,13 +1,9 @@
-'use strict';
+"use strict";
 module.exports = function() {
+  var secretNumber = Math.floor(Math.random() * 1000 + 1);
 
-  var secretNumberGenerator = function() {
-    return Math.floor((Math.random()*1000)+1)
-    } 
-    // console.log(secretNumberGenerator());
-    var secretNumber = secretNumberGenerator();
-    var storedNumber = function() {
-        return secretNumber;
-    }
-    return storedNumber;
+  var storedNumber = function() {
+    return secretNumber;
+  };
+  return storedNumber;
 };
